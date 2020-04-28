@@ -1,0 +1,120 @@
+country_decisions = {
+
+	stop_hinduistan_shadow_kingdom = {
+		major = yes
+		potential = {
+			ai = no
+			NOT = { has_global_flag = italy_out_of_HRE }
+			has_global_flag = enable_stop_shadow_kingdom
+			is_emperor = yes
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = kashmir_area
+				area = himalayan_hills_area
+				area = nepal_area
+				area = utsang_area
+				area = kham_area
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_part_of_hre = no
+				NOT = { owner = { is_subject_of = ROOT } }
+			}
+		}
+		allow = {
+			NOT = { is_year = 1490 }
+			custom_trigger_tooltip = {
+				tooltip = kashmir_in_hre_tooltip
+				kashmir_area = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						is_part_of_hre = yes
+						owner = {
+							is_subject_of = ROOT
+						}
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = himalaya_in_hre_tooltip
+				himalayan_hills_area = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						is_part_of_hre = yes
+						owner = {
+							is_subject_of = ROOT
+						}
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = nepal_in_hre_tooltip
+				nepal_area = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						is_part_of_hre = yes
+						owner = {
+							is_subject_of = ROOT
+						}
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = u_in_hre_tooltip
+				utsang_area = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						is_part_of_hre = yes
+						owner = {
+							is_subject_of = ROOT
+						}
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = kham_in_hre_tooltip
+				kham_area = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						is_part_of_hre = yes
+						owner = {
+							is_subject_of = ROOT
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			hidden_effect = {
+				set_global_flag = italy_out_of_HRE #Disables Shadow Kingdom Event.
+				every_province = {
+					limit = {
+						OR = {
+							region = tibet_region
+							region = hindusthan_region
+						}
+						is_part_of_hre = no
+						OR = {
+							owned_by = ROOT
+							owner = {
+								is_subject_of = ROOT
+							}
+						}
+					}
+					set_in_empire = yes
+				}
+			}
+			custom_tooltip = disable_shadow_kingdom_tooltip
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+}

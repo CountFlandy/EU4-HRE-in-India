@@ -1,0 +1,283 @@
+# Do not change tags in here without changing every other reference to them.
+# Do not change tags in here without changing every other reference to them.
+# If adding new groups or ideas, make sure they are unique.
+
+### Nation specific idea groups
+
+JNP_ideas = { #Cloned from Vanilla #Added RMP to give them any ideas
+	start = {
+		infantry_cost = -0.1
+		diplomatic_upkeep = 1
+	}
+
+	bonus = {
+		global_trade_power = 0.10
+	}
+	
+	trigger = {
+		OR = {
+			tag = JNP
+			tag = RMP
+			tag = ODH
+		}
+	}
+	free = yes		#will be added at load.
+	
+	jnp_purbias = {
+		fire_damage = 0.1
+	}
+	shiraz_e_hind = {
+		global_institution_spread = 0.1
+	}
+	jnp_sants_and_sufis = {
+		religious_unity = 0.5
+	}
+	jaunpuri_architecture = {
+		development_cost = -0.1
+	}
+	jnp_gangetic_plain = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	jnp_hindusthani_classical_music = {
+		prestige = 1
+	}
+	modernization_of_jaunpuri_army = {
+		infantry_power = 0.1
+	}
+}
+
+BAH_ideas = { #Cloned from Vanilla
+	start = {
+		cavalry_power = 0.1
+		army_tradition = 0.5
+	}
+
+	bonus = {
+		stability_cost_modifier = -0.1
+	}
+	
+	trigger = {
+		tag = BAH
+	}
+	free = yes		#will be added at load.
+	
+	gharbians = {
+		manpower_recovery_speed = 0.1
+	}
+	legacy_of_gisu_daraz = {
+		religious_unity = 0.25
+		prestige = 0.5
+	}
+	dakani_language = {
+		num_accepted_cultures = 1
+	}
+	karimis = {
+		trade_efficiency = 0.1
+	}
+	takht_e_firoza = {
+		diplomatic_reputation = 1
+	}
+	bahmani_primogeniture = {
+		legitimacy = 1
+	}
+	madrasa_of_mahmud_gawan = {
+		idea_cost = -0.1
+	}
+}
+
+DEC_ideas = { #Cloned from Vanilla to include KHD and BRR
+	start = {
+		administrative_efficiency = 0.05
+		land_morale = 0.1
+	}
+
+	bonus = {
+		infantry_power = 0.1
+	}
+	
+	trigger = {
+		OR = {
+			tag = DEC
+			tag = KHD
+			tag = BRR
+			tag = AHM
+		}
+		
+	}
+	free = yes
+	
+	dakani_language = {
+		#Copied from BAH
+	}
+	dec_diwan_funding = {
+		free_adm_policy = 1
+	}
+	dec_foreign_trade_privileges = {
+		global_trade_power = 0.1
+	}
+	dec_empower_paigah = {
+		land_forcelimit_modifier = 0.2
+	}
+	dec_modernize_the_sarf_e_khas = {
+		discipline = 0.05
+	}
+	dec_jewels_of_the_nizams = {
+		diplomatic_reputation = 1
+	}
+	dec_encourage_industries = {
+		global_trade_goods_size_modifier = 0.1
+	}
+}
+
+
+LDK_ideas = { #Cloned from Vanilla to give KSH ideas
+	start = {
+		tolerance_own = 2
+		diplomatic_upkeep = 1
+	}
+
+	bonus = {
+		defensiveness = 0.2
+	}
+	
+	trigger = {
+		tag = KSH
+	}
+	free = yes
+	
+	ldk_two_kingdoms = {
+		prestige = 1
+	}
+	ldk_fortified_mountain_cities = {
+		fort_maintenance_modifier = -0.2
+	}
+	ldk_wool_from_the_roof_of_the_world = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	ldk_great_monasteries = {
+		build_cost = -0.1
+	}
+	ldk_la_dvags_rgyal_rabs = {
+		stability_cost_modifier = -0.1
+	}
+	ldk_kingdom_united = {
+		legitimacy = 1
+	}
+	ldk_far_away_traders = {
+		trade_efficiency = 0.1
+	}
+}
+
+SND_ideas = { #Cloned from Vanilla to give MUL ideas
+	start = {
+		land_forcelimit_modifier = 0.25
+		missionaries = 1
+	}
+	
+	bonus = {
+		global_manpower_modifier = 0.15
+	}
+	
+	trigger = {
+		tag = MUL
+	}
+	free = yes #will be added at load.
+
+	snd_enduring_dynasty = {
+		legitimacy = 1
+	}
+	snd_bab_ul_islam = {
+		global_missionary_strength = 0.02
+	}
+	snd_gujarati_connections = {
+		placed_merchant_power = 5
+	}
+	snd_makli_necropolis = {
+		tolerance_own = 1
+	}
+	snd_end_judicial_corruption = {
+		yearly_corruption = -0.1
+	}
+	snd_oversee_rise_of_thatta = {
+		build_cost = -0.1
+	}
+	snd_recruit_baloch_tribesmen = {
+		mercenary_discipline = 0.025
+	}
+}
+
+vindhyan_ideas = { #Copied from Vanilla to ensure they at least have ideas
+	start = {
+		num_accepted_cultures = 1
+		fort_maintenance_modifier = -0.2
+	}
+	
+	bonus = {
+		cavalry_power = 0.10 #Marathi Alliance
+	}
+	
+	trigger = {
+		tag = KLP
+	}
+	free = yes
+	
+	bundelkhandi_rajput_connections = {
+		diplomatic_reputation = 1
+	}
+	forts_of_bundelkhand = {
+		defensiveness = 0.15
+	}
+	bundelkhandi_sacred_land = {
+		tolerance_own = 1
+	}
+	bundeli_kalam = {
+		prestige = 1
+	}
+	untamed_bundelkhand = {
+		hostile_attrition = 1
+	}
+	bundelkhandi_diamonds = { #Panna, etc
+		trade_efficiency = 0.1
+	}
+	candella_legacy = {
+		legitimacy = 1
+	}
+}
+
+PUN_ideas = {
+	start = {
+		religious_unity = 0.25	#melting pot of religions
+		land_morale = 0.10
+	}
+
+	bonus = {
+		cavalry_power = 0.1
+	}
+	
+	trigger = {
+		tag = SRH
+	}
+	free = yes
+	
+	breadbasket_of_india = {					
+		global_trade_goods_size_modifier = 0.10
+	}
+	encourage_indo_persian_trade = {				
+		trade_efficiency = 0.1
+	}
+	punjabi_textile_industry = {			
+		production_efficiency = 0.15
+	}
+	foundation_of_the_khalsa = { 							
+		global_manpower_modifier = 0.2
+	}
+	gurmukhi_script = {
+		stability_cost_modifier = -0.1
+	}
+	strength_of_the_misls = {
+		cavalry_cost = -0.10
+	}
+	reforming_the_punjabi_army = {
+		discipline = 0.05
+	}
+}

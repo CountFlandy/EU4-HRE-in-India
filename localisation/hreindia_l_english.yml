@@ -1,0 +1,16 @@
+﻿l_english:
+ hre_india_event.4.a.tt: "Unless all of the region of §YThe Kingdom of Hinduistan§! is part of the Empire before 1530 and stays inside it until 1570 the states there are likely to leave the Empire."
+ hre_india_event.4.b.tt: "Unless the following areas are entirely part of the Empire before 1530 and stay there until 1570 all Hinduistani and Tibetian states will be given a choice to leave the Empire:\n§YKashmir§!\n§YNepal§!\n§YU§!\n§YKham§!\n§YHimalayan Hills§!."
+ stop_hinduistan_shadow_kingdom_title:0 "Rein in Northern Hindustan"
+ stop_hinduistan_shadow_kingdom_desc:0 "Many of our predecessors on the Imperial throne have failed to assert their authority over the Kingdom of Hindustan. If we are to prevent the area from slipping entirely out of imperial control we must forcefully assert our authority over Northern Hindustan."
+ stop_hinduistan_shadow_kingdom_ai_title:0 "Rein in Hindustan"
+ stop_hinduistan_shadow_kingdom_ai_desc:0 "Many of our predecessors on the Imperial throne have failed to assert their authority over the Kingdom of Hindustan. If we are to prevent the area from slipping entirely out of imperial control we must forcefully assert our authority over Northern Italy."
+ kashmir_in_hre_tooltip:0 "Mainland parts of §YKashmir§! Area is in the Empire or a vassal of the Emperor."
+ himalaya_in_hre_tooltip:1 "§YHimalayan Hills§! Area, except Abruzzi, is in the Empire or a vassal of the Emperor."
+ nepal_in_hre_tooltip:0 "§YNepal§! Area is in the Empire or a vassal of the Emperor."
+ u_in_hre_tooltip:0 "§YU§! Area is in the Empire or a vassal of the Emperor."
+ kham_in_hre_tooltip:0 "§YKham§! Area is in the Empire or a vassal of the Emperor."
+ disable_shadow_kingdom_tooltip:0 "All provinces in Hindustan and Tibet under our direct or indirect control will be added to the Empire.\nNo state will leave the Empire through the Shadow Kingdom event."
+ hre_india_event.4.d: "For years now Imperial Authority over the Kingdom of Hindustan has been waning. Successive Emperors have failed to impose their will on the Hinduistani states and large areas that are formally part of the Empire have been lost to states who reject the Empire's right to them. Unless Hindustan, Kashmir, the Himilayan Hills, Nepal, U, and Kham are brought back into the Empire the states there may slip out of Imperial control forever."
+ hre_india_event.4.t: "The Kingdom of Hindustan and the Empire"
+ 
